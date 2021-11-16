@@ -9,13 +9,13 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #f1e6eb;
-  color: #2b303a;
+  background-color: #282828;
+  color: #00ff66;
 }
 
 h1 {
   text-align: center;
-  font-family: Monospace;
+  font-family: "Press Start 2P", cursive;
   margin: 1rem 0 3rem 0;
 }
 
@@ -27,7 +27,7 @@ main {
 
 section {
   min-width: 20rem;
-  border: thin solid #7c7c7c;
+  border: thin solid whitesmoke;
   border-radius: 0.3rem;
   margin-bottom: 3rem;
 
@@ -39,11 +39,12 @@ section {
 section h2,
 section p {
   text-align: center;
+  font-family: serif;
 }
 
 section h3 {
   margin: 1rem 0;
-  font-family: Monospace;
+  font-family: serif;
   font-size: 3rem;
 }
 
@@ -62,9 +63,30 @@ fieldset i {
 }
 
 fieldset i.add {
-  color: green;
+  color: #00ff66;
 }
 
 fieldset i.subtract {
   color: #f64545;
+}
+
+.button {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  color: #282828;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #7c7c7c;
+}
+
+.button:active {
+  background-color: #00ff66;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
